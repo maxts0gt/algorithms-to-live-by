@@ -18,7 +18,7 @@ def twoNumberSumHashed(array, target_sum):
     for num in array:
         potential_match = target_sum - num
         if potential_match in nums:
-            return nums[potential_match, num]
+            return [potential_match, num]
         else:
             nums[num] = True
     return []
